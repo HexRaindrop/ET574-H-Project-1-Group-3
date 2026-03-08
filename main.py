@@ -13,7 +13,7 @@ def view_all_session():
     print("\nAll Screen Time Sessions")
 
     for i in range(len(apps)):
-        print(apps[i])
+        print(f"{apps[i]} - {screentime[i]} minutes - {type_app[i]}")
 
 def main_loop():
 
