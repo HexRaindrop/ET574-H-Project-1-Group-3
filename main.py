@@ -9,7 +9,11 @@ def view_summary():
 
 
 def view_all_session():
-    print("Sessions coming soon")
+
+    print("\nAll Screen Time Sessions")
+
+    for i in range(len(apps)):
+        print(apps[i])
 
 def main_loop():
 
