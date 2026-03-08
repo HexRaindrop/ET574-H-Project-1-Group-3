@@ -6,8 +6,10 @@ def add_screen_time_sessons():
 
 def view_summary():
     total_sessions = len(screentime)
-    print("Total sessions:", total_sessions)
+    total_minutes = sum(screentime)
 
+    print("Total sessions:", total_sessions)
+    print("Total minutes:", total_minutes)
 
 def view_all_session():
 
