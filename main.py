@@ -4,25 +4,7 @@ from data import apps, screentime, type_app
 def add_screen_time_sessons():
     add_session()
 
-def view_summary():
-    total_sessions = len(screentime)
-    total_minutes = sum(screentime)
-    average_minutes = total_minutes / total_sessions
-    max_minutes = max(screentime)
-    min_minutes = min(screentime)
 
-    print("Total sessions:", total_sessions)
-    print("Total minutes:", total_minutes)
-    print("Average minutes:", average_minutes)
-    print("Max minutes:", max_minutes)
-    print("Min minutes:", min_minutes)
-
-def view_all_session():
-
-    print("\nAll Screen Time Sessions")
-
-    for i in range(len(apps)):
-        print(f"{apps[i]} - {screentime[i]} minutes - {type_app[i]}")
 
 def main_loop():
 
