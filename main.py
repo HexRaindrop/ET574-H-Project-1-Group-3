@@ -18,7 +18,7 @@ def main_loop():
         case _:
             print("⚠ ⚠ ⚠\t invalid input \t\t⚠ ⚠ ⚠ \n⚠ ⚠ ⚠\t error[400]Badrequest,\t⚠ ⚠ ⚠\n⚠ ⚠ ⚠\t please try again using\t⚠ ⚠ ⚠\n⚠ ⚠ ⚠\t the options given\t⚠ ⚠ ⚠")
     return
-
+#call main_loop function and put it in a while loop. the program will continue to run untill our function returns a "False" which we get in case 4
 while True:
     if main_loop() == False: break
     else: pass
