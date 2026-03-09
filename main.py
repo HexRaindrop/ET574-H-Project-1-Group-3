@@ -1,10 +1,5 @@
 from tracker import add_session, view_summary, view_all_session
 
-def add_screen_time_sessons():
-    add_session()
-
-
-
 def main_loop():
 
     #greeting
@@ -12,16 +7,18 @@ def main_loop():
     #pathhing: use the match statment to asign the correct function for the users choise
     match x:
         case "1":
-            add_screen_time_sessons()
+            add_session()
         case "2":
             view_summary()
         case "3":
             view_all_session()
         case "4":
             print("exiting program \nGoodbye.")
-            return
+            return False
         case _:
             print("⚠ ⚠ ⚠\t invalid input \t\t⚠ ⚠ ⚠ \n⚠ ⚠ ⚠\t error[400]Badrequest,\t⚠ ⚠ ⚠\n⚠ ⚠ ⚠\t please try again using\t⚠ ⚠ ⚠\n⚠ ⚠ ⚠\t the options given\t⚠ ⚠ ⚠")
     return
 
-main_loop()
+while True:
+    if main_loop() == False: break
+    else: pass
