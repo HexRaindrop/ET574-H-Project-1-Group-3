@@ -4,7 +4,7 @@ from data import apps, screentime, type_app
 def add_session():
     print("\n--- Add a new screen time session ---")
     
-    # 1. App / site name (cannot be empty)
+    
     name = input("what app did you use? \nex:facetime,text,intstgram: ").strip()
     while not name:
         print("Error: Name cannot be empty!")
@@ -23,7 +23,7 @@ def add_session():
     apps.append(name)
     type_app.append(category)
     screentime.append(minutes)  
-    #save_data()
+    
     print("\nSession added successfully!")
 
 def view_summary():
@@ -46,8 +46,4 @@ def view_all_session():
     for i in range(len(apps)):
         print(f"{apps[i]} - {screentime[i]} minutes - {type_app[i]}")  
 
-#def save_data():
-    #with open("data.py", "w") as f:
-        #f.write(f"apps = {apps} \nscreentime = {screentime} \ntype_app = {type_app}")
-        
-#save_data()
+
