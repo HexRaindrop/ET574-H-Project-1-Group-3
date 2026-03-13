@@ -4,7 +4,7 @@ from data import apps, screentime, type_app
 def add_session():
     print("\n--- Add a new screen time session ---")
     
-    # 1. App / site name (cannot be empty)
+    # 1. App / site name 
     name = input("Efacetime,text,intstgram: ").strip()
     while not name:
         print("Error: Name cannot be empty!")
