@@ -13,6 +13,7 @@ def main_loop():
         case "3":
             view_all_session()
         case "4":
+            #return false to break the function later in the main loop
             print("exiting program \nGoodbye.")
             return False
         case _:

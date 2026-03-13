@@ -1,4 +1,3 @@
-import data
 from data import apps, screentime, type_app
 
 def add_session():
